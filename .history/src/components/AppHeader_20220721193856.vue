@@ -12,11 +12,7 @@
               <!-- Primary Navigation -->
               <ul class="flex flex-row mt-1">
                   <!-- Navigation Links -->
-                  <li>
-                    <router-link class="px-2 text-white" to="/manage">
-                      Manage
-                    </router-link>
-                  </li>
+
                   <li>
                     <router-link class="px-2 text-white" to="/about">
                       About

@@ -18,10 +18,10 @@
                     </router-link>
                   </li>
                   <li>
-                    <router-link class="px-2 text-white" to="/about">
-                      About
-                    </router-link>
-                  </li>
+                      <router-link class="px-2 text-white" to="/about">
+                        About
+                      </router-link>
+                    </li>
                   <li v-if="!userLoggedIn">
                       <a class="px-2 text-white" href="#" @click.prevent="toggleAuthModal">
                       Login / Register</a>
