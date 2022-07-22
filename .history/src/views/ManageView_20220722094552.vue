@@ -142,11 +142,8 @@ export default {
   name: 'ManageApp',
   beforeRouteEnter(to, from, next) {
     console.log(store.state.userLoggedIn);
-    if (store.state.userLoggedIn) {
-      next();
-    } else {
-      next({ name: 'home' });
-    }
+
+    next();
   },
 };
 </script>
