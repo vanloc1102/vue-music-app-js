@@ -20,8 +20,9 @@ const routes = [
     // alias: '/manage',
     path: '/manage-music',
     component: Manage,
-    meta: {
-      requiresAuth: true,
+    beforeEnter: (to, from, next) => {
+      console.log('Manage Route Guard');
+      next();
     },
   },
   {
@@ -54,7 +55,7 @@ router.beforeEach((to, from, next) => {
   if (store.state.userLoggedIn) {
     next();
   } else {
-    next({ name: 'home' });
+    next({ name: 'home'});
   }
   next();
 });

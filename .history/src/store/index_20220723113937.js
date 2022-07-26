@@ -52,7 +52,7 @@ export default createStore({
 
       commit('toggleAuth');
 
-      if (payload.route.meta.requiredAuth) {
+      if (payload.router.meta.requiredAuth) {
         payload.router.push({ name: 'home' });
       }
     },

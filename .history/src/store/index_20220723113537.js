@@ -52,8 +52,8 @@ export default createStore({
 
       commit('toggleAuth');
 
-      if (payload.route.meta.requiredAuth) {
-        payload.router.push({ name: 'home' });
+      if (payload.router.meta.requiredAuth) {
+        payload.route.push({ name: 'home' });
       }
     },
   },

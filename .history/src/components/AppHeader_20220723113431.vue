@@ -57,7 +57,6 @@ export default {
       // if (this.$route.meta.requiredAuth) {
       //   this.$route.push({ name: 'home' });
       // }
-      window.location.reload();
     },
   },
 };
